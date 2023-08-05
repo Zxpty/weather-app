@@ -41,6 +41,10 @@ async function getWeatherData(cityValue){
         <div>${details[1]}%</div>
         <div>${details[2]}m/s</div>`
     } catch (error) {
-        
+        weatherDataEl.querySelector(".name-city").innerHTML = "";
+        weatherDataEl.querySelector(".icon").innerHTML = "";
+        weatherDataEl.querySelector(".temperature").innerHTML = "";
+        weatherDataEl.querySelector(".description").innerHTML = "";
+        weatherDataEl.querySelector(".details").innerHTML = "";
     }
 }
