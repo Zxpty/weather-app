@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f7f7f7;
+    background-image: url(/weather-app/images/img-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0,.2);
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+form input[type="text"]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+    
+}
+form input[type="submit"]{
+    background-color: #030e49;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    
+    outline: none;
+    transition: background-color .3s ease;
+}
+form input[type="submit"]:hover{
+    background-color: #09209c;
+}
+
+.icon img{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temperature{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.description{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details > div{
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 45px;
+}
+
+@media (max-width: 768px){
+    .container{
+        margin: 0;
+        position: absolute;
+        max-width: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    form{
+        flex-direction: column;
+    }
+    form input[type="text"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    body{
+        background-size: auto;
+    }
+}
