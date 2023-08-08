@@ -4,9 +4,12 @@ body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
     background-color: #f7f7f7;
-    background-image: url(/weather-app/images/img-2.png);
+    background-image: url(/images/img-2.png);
     background-repeat: no-repeat;
+   
     background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 .container{
     background-color: #fff;
@@ -100,8 +103,5 @@ form input[type="submit"]:hover{
     form input[type="text"]{
         width: 100%;
         margin-bottom: 10px;
-    }
-    body{
-        background-size: auto;
     }
 }
